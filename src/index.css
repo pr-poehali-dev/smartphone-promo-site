@@ -99,3 +99,33 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .glow-button {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(155, 135, 245, 0.3);
+  }
+
+  .glow-button:hover {
+    box-shadow:
+      0 0 30px rgba(155, 135, 245, 0.6),
+      0 0 60px rgba(155, 135, 245, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .glow-text {
+    text-shadow:
+      0 0 40px rgba(155, 135, 245, 0.8),
+      0 0 80px rgba(168, 85, 247, 0.6);
+  }
+
+  .card-glow {
+    transition: all 0.3s ease;
+  }
+
+  .card-glow:hover {
+    box-shadow:
+      0 0 40px rgba(155, 135, 245, 0.4),
+      0 20px 60px rgba(155, 135, 245, 0.2);
+  }
+}

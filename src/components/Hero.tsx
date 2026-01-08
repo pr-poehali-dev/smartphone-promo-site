@@ -29,8 +29,10 @@ const Hero = () => {
             <span className="text-accent font-bold text-lg drop-shadow-lg">🎁 Праздничное предложение!</span>
           </div>
 
-          <h1 className="font-heading font-bold text-5xl md:text-7xl mb-6 bg-gradient-to-r from-primary via-purple-600 to-primary bg-clip-text text-transparent leading-tight" style={{ filter: 'drop-shadow(0 0 40px rgba(155, 135, 245, 0.6))' }}>
-            НАДЕЖНЫЕ СМАРТФОНЫ
+          <h1 className="font-heading font-bold text-5xl md:text-7xl mb-6 leading-tight">
+            <span className="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-purple-500 bg-clip-text text-transparent glow-text">
+              НАДЕЖНЫЕ СМАРТФОНЫ
+            </span>
           </h1>
 
           <div className="mb-8 p-8 bg-gradient-to-r from-accent via-orange-500 to-accent rounded-3xl shadow-2xl transform hover:scale-105 transition-transform" style={{ boxShadow: '0 20px 60px rgba(249, 115, 22, 0.5), 0 0 60px rgba(249, 115, 22, 0.3)' }}>
@@ -47,30 +49,30 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 glow-button">
               <Icon name="Gift" size={20} className="mr-2" />
               Выбрать смартфон
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 text-lg px-8 py-6">
+            <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary/10 text-lg px-8 py-6 glow-button">
               <Icon name="MessageCircle" size={20} className="mr-2" />
               Написать в Telegram
             </Button>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:scale-105" style={{ boxShadow: '0 10px 30px rgba(155, 135, 245, 0.2)' }}>
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 card-glow border border-purple-100">
               <div className="text-3xl mb-2">✅</div>
               <p className="font-semibold text-gray-800">100% Оригинал</p>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:scale-105" style={{ boxShadow: '0 10px 30px rgba(155, 135, 245, 0.2)' }}>
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 card-glow border border-purple-100">
               <div className="text-3xl mb-2">🚚</div>
               <p className="font-semibold text-gray-800">Отправка день в день</p>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:scale-105" style={{ boxShadow: '0 10px 30px rgba(155, 135, 245, 0.2)' }}>
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 card-glow border border-purple-100">
               <div className="text-3xl mb-2">🎁</div>
               <p className="font-semibold text-gray-800">Чехол + Стекло</p>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:scale-105" style={{ boxShadow: '0 10px 30px rgba(155, 135, 245, 0.2)' }}>
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 card-glow border border-purple-100">
               <div className="text-3xl mb-2">🛡️</div>
               <p className="font-semibold text-gray-800">Гарантия качества</p>
             </div>

@@ -87,7 +87,7 @@ const Contacts = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="border-2 border-primary shadow-xl bg-gradient-to-br from-primary/5 to-purple-50">
+          <Card className="border-2 border-primary shadow-xl bg-gradient-to-br from-primary/5 to-purple-50 card-glow">
             <CardContent className="p-8">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center">
@@ -101,14 +101,14 @@ const Contacts = () => {
               <p className="text-gray-700 mb-6">
                 Присоединяйся к нашему каналу для участия в розыгрышах путевок, получения эксклюзивных предложений и новостей о новинках!
               </p>
-              <Button className="w-full bg-primary hover:bg-primary/90" size="lg">
+              <Button className="w-full bg-primary hover:bg-primary/90 glow-button" size="lg">
                 <Icon name="Send" size={20} className="mr-2" />
                 Перейти в Telegram
               </Button>
             </CardContent>
           </Card>
 
-          <Card className="border-2 border-gray-200 shadow-xl">
+          <Card className="border-2 border-purple-200 shadow-xl card-glow bg-gradient-to-br from-white to-purple-50/20">
             <CardContent className="p-8">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">

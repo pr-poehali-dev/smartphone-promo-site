@@ -80,7 +80,7 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
             </button>
           </div>
 
-          <Button className="hidden md:flex bg-primary hover:bg-primary/90">
+          <Button className="hidden md:flex bg-primary hover:bg-primary/90 glow-button">
             <Icon name="MessageCircle" size={18} className="mr-2" />
             Telegram
           </Button>

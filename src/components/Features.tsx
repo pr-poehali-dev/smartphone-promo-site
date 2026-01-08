@@ -66,7 +66,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-scale-in"
+              className="border border-purple-100 shadow-lg card-glow bg-gradient-to-br from-white to-purple-50/20 animate-scale-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-8">

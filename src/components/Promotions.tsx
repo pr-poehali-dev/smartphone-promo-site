@@ -26,7 +26,7 @@ const Promotions = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <Card className="border-4 border-accent shadow-2xl hover:shadow-3xl transition-shadow overflow-hidden">
+          <Card className="border-4 border-accent shadow-2xl card-glow overflow-hidden">
             <div className="bg-gradient-to-r from-accent to-orange-600 p-6">
               <CardTitle className="text-white font-heading text-3xl flex items-center gap-3">
                 <Icon name="Gift" size={32} />
@@ -52,7 +52,7 @@ const Promotions = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-2 border-purple-200 shadow-xl hover:shadow-2xl transition-shadow">
+          <Card className="border-2 border-purple-300 shadow-xl card-glow bg-gradient-to-br from-white to-purple-50/30">
             <CardHeader>
               <CardTitle className="text-2xl font-heading flex items-center gap-2">
                 <Icon name="Package" size={28} />
@@ -129,7 +129,7 @@ const Promotions = () => {
             </div>
 
             <div className="mt-8 text-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-10 py-6">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-10 py-6 glow-button">
                 <Icon name="MessageCircle" size={20} className="mr-2" />
                 Участвовать в розыгрыше
               </Button>

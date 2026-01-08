@@ -69,7 +69,7 @@ const About = () => {
           {locations.map((location, index) => (
             <Card
               key={index}
-              className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
+              className="border border-purple-100 shadow-xl card-glow bg-gradient-to-br from-white to-purple-50/20 overflow-hidden"
             >
               <div className={`h-2 bg-gradient-to-r ${location.color}`} />
               <CardContent className="p-8">
