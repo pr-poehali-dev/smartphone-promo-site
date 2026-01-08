@@ -1,0 +1,82 @@
+import { Card, CardContent } from '@/components/ui/card';
+import Icon from '@/components/ui/icon';
+
+const Features = () => {
+  const features = [
+    {
+      icon: 'Store',
+      title: 'Магазины в 3 странах',
+      description: 'Россия, Дубай и Гонконг — выбирайте удобную локацию',
+      color: 'from-purple-500 to-purple-700'
+    },
+    {
+      icon: 'ShieldCheck',
+      title: 'Официальный бренд',
+      description: 'Сертифицированные оригиналы с полной гарантией',
+      color: 'from-blue-500 to-blue-700'
+    },
+    {
+      icon: 'Zap',
+      title: 'Быстрая доставка',
+      description: 'Весь товар в наличии — отправляем день в день',
+      color: 'from-orange-500 to-red-600'
+    },
+    {
+      icon: 'Gift',
+      title: 'Подарки в каждой покупке',
+      description: 'Чехол, стекло и сувениры от 3000₽',
+      color: 'from-pink-500 to-rose-600'
+    },
+    {
+      icon: 'Trophy',
+      title: 'Розыгрыши путевок',
+      description: 'Каждую неделю разыгрываем поездки в Дубай и Гонконг',
+      color: 'from-yellow-500 to-orange-600'
+    },
+    {
+      icon: 'Users',
+      title: '1 000 000+ клиентов',
+      description: 'Более миллиона довольных покупателей по всему миру',
+      color: 'from-green-500 to-emerald-700'
+    }
+  ];
+
+  return (
+    <div className="py-24 bg-white">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-4 text-gray-900">
+            Почему выбирают нас
+          </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Официальный статус, проверенное качество и забота о каждом клиенте
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <Card
+              key={index}
+              className="border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-scale-in"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <CardContent className="p-8">
+                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6 shadow-lg`}>
+                  <Icon name={feature.icon as any} className="text-white" size={32} />
+                </div>
+                <h3 className="font-heading font-bold text-xl mb-3 text-gray-900">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Features;

@@ -1,0 +1,70 @@
+import { Button } from '@/components/ui/button';
+import Icon from '@/components/ui/icon';
+
+const Hero = () => {
+  return (
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-purple-50 to-white" />
+      
+      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl animate-pulse delay-1000" />
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-5xl mx-auto text-center animate-fade-in">
+          <div className="inline-block mb-6 px-6 py-2 bg-accent/10 border-2 border-accent rounded-full">
+            <span className="text-accent font-bold text-lg">🎁 Праздничное предложение!</span>
+          </div>
+
+          <h1 className="font-heading font-bold text-5xl md:text-7xl mb-6 bg-gradient-to-r from-primary via-purple-600 to-primary bg-clip-text text-transparent leading-tight">
+            НАДЕЖНЫЕ СМАРТФОНЫ
+          </h1>
+
+          <div className="mb-8 p-8 bg-gradient-to-r from-accent via-orange-500 to-accent rounded-3xl shadow-2xl transform hover:scale-105 transition-transform">
+            <p className="text-white font-heading font-bold text-3xl md:text-4xl drop-shadow-lg">
+              🔥 Дарим 2 000₽ на связь
+            </p>
+            <p className="text-white text-xl mt-2 font-semibold">
+              Весь 2026 год говори бесплатно!
+            </p>
+          </div>
+
+          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
+            Официальные магазины в России, Дубае и Гонконге. Оригинальные смартфоны с гарантией качества.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
+              <Icon name="Gift" size={20} className="mr-2" />
+              Выбрать смартфон
+            </Button>
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 text-lg px-8 py-6">
+              <Icon name="MessageCircle" size={20} className="mr-2" />
+              Написать в Telegram
+            </Button>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-3xl mb-2">✅</div>
+              <p className="font-semibold text-gray-800">100% Оригинал</p>
+            </div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-3xl mb-2">🚚</div>
+              <p className="font-semibold text-gray-800">Отправка день в день</p>
+            </div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-3xl mb-2">🎁</div>
+              <p className="font-semibold text-gray-800">Чехол + Стекло</p>
+            </div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-3xl mb-2">🛡️</div>
+              <p className="font-semibold text-gray-800">Гарантия качества</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
