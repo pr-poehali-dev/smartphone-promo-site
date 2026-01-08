@@ -45,8 +45,15 @@ const About = () => {
   ];
 
   return (
-    <div className="py-24 bg-white">
-      <div className="container mx-auto px-6">
+    <div className="py-24 bg-white relative overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+        style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/b8e3535d-5f4f-4499-9166-5f4bba62e341/files/362cbb50-22ee-411e-b573-0199e133e304.jpg)' }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-purple-50/30 to-white" />
+      <div className="absolute top-20 right-20 w-72 h-72 bg-purple-300/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-40 left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-heading font-bold text-4xl md:text-5xl mb-4 text-gray-900">
             О бренде «Надежные Смартфоны»
