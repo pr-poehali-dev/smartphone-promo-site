@@ -10,8 +10,9 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-br from-purple-600/40 via-purple-400/30 to-purple-200/20" />
       
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-pulse delay-1000" />
+      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/40 rounded-full blur-3xl animate-pulse" style={{ boxShadow: '0 0 100px 50px rgba(155, 135, 245, 0.4)' }} />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/40 rounded-full blur-3xl animate-pulse" style={{ boxShadow: '0 0 120px 60px rgba(168, 85, 247, 0.4)', animationDelay: '1s' }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-400/20 rounded-full blur-3xl animate-pulse" style={{ boxShadow: '0 0 150px 80px rgba(192, 132, 252, 0.3)', animationDelay: '0.5s' }} />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-5xl mx-auto text-center animate-fade-in relative">
@@ -22,15 +23,15 @@ const Hero = () => {
               className="w-64 h-auto drop-shadow-2xl"
             />
           </div>
-          <div className="inline-block mb-6 px-6 py-2 bg-accent/10 border-2 border-accent rounded-full">
-            <span className="text-accent font-bold text-lg">🎁 Праздничное предложение!</span>
+          <div className="inline-block mb-6 px-6 py-2 bg-accent/10 border-2 border-accent rounded-full" style={{ boxShadow: '0 0 30px rgba(249, 115, 22, 0.4)' }}>
+            <span className="text-accent font-bold text-lg drop-shadow-lg">🎁 Праздничное предложение!</span>
           </div>
 
-          <h1 className="font-heading font-bold text-5xl md:text-7xl mb-6 bg-gradient-to-r from-primary via-purple-600 to-primary bg-clip-text text-transparent leading-tight">
+          <h1 className="font-heading font-bold text-5xl md:text-7xl mb-6 bg-gradient-to-r from-primary via-purple-600 to-primary bg-clip-text text-transparent leading-tight" style={{ filter: 'drop-shadow(0 0 40px rgba(155, 135, 245, 0.6))' }}>
             НАДЕЖНЫЕ СМАРТФОНЫ
           </h1>
 
-          <div className="mb-8 p-8 bg-gradient-to-r from-accent via-orange-500 to-accent rounded-3xl shadow-2xl transform hover:scale-105 transition-transform">
+          <div className="mb-8 p-8 bg-gradient-to-r from-accent via-orange-500 to-accent rounded-3xl shadow-2xl transform hover:scale-105 transition-transform" style={{ boxShadow: '0 20px 60px rgba(249, 115, 22, 0.5), 0 0 60px rgba(249, 115, 22, 0.3)' }}>
             <p className="text-white font-heading font-bold text-3xl md:text-4xl drop-shadow-lg">
               🔥 Дарим 2 000₽ на связь
             </p>
@@ -55,19 +56,19 @@ const Hero = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:scale-105" style={{ boxShadow: '0 10px 30px rgba(155, 135, 245, 0.2)' }}>
               <div className="text-3xl mb-2">✅</div>
               <p className="font-semibold text-gray-800">100% Оригинал</p>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:scale-105" style={{ boxShadow: '0 10px 30px rgba(155, 135, 245, 0.2)' }}>
               <div className="text-3xl mb-2">🚚</div>
               <p className="font-semibold text-gray-800">Отправка день в день</p>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:scale-105" style={{ boxShadow: '0 10px 30px rgba(155, 135, 245, 0.2)' }}>
               <div className="text-3xl mb-2">🎁</div>
               <p className="font-semibold text-gray-800">Чехол + Стекло</p>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:scale-105" style={{ boxShadow: '0 10px 30px rgba(155, 135, 245, 0.2)' }}>
               <div className="text-3xl mb-2">🛡️</div>
               <p className="font-semibold text-gray-800">Гарантия качества</p>
             </div>
