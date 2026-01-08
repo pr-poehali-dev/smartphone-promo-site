@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
+import ParallaxBackground from '@/components/ParallaxBackground';
 
 const Features = () => {
   const features = [
@@ -43,9 +44,10 @@ const Features = () => {
 
   return (
     <div className="py-24 bg-white relative overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
-        style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/b8e3535d-5f4f-4499-9166-5f4bba62e341/files/362cbb50-22ee-411e-b573-0199e133e304.jpg)' }}
+      <ParallaxBackground 
+        imageUrl="https://cdn.poehali.dev/projects/b8e3535d-5f4f-4499-9166-5f4bba62e341/files/362cbb50-22ee-411e-b573-0199e133e304.jpg"
+        opacity={0.1}
+        speed={0.3}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-purple-50/50 via-white to-purple-50/30" />
       <div className="absolute top-0 right-0 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl" />

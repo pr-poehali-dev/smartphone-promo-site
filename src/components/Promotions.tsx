@@ -2,13 +2,15 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 import { Badge } from '@/components/ui/badge';
+import ParallaxBackground from '@/components/ParallaxBackground';
 
 const Promotions = () => {
   return (
     <div className="py-24 bg-gradient-to-b from-purple-50 to-white relative overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
-        style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/b8e3535d-5f4f-4499-9166-5f4bba62e341/files/362cbb50-22ee-411e-b573-0199e133e304.jpg)' }}
+      <ParallaxBackground 
+        imageUrl="https://cdn.poehali.dev/projects/b8e3535d-5f4f-4499-9166-5f4bba62e341/files/362cbb50-22ee-411e-b573-0199e133e304.jpg"
+        opacity={0.15}
+        speed={0.4}
       />
       <div className="absolute inset-0 bg-gradient-to-br from-purple-200/30 via-purple-100/20 to-white/50" />
       <div className="absolute top-1/4 left-10 w-80 h-80 bg-primary/20 rounded-full blur-3xl animate-pulse" style={{ boxShadow: '0 0 100px 50px rgba(155, 135, 245, 0.3)' }} />
