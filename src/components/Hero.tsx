@@ -10,7 +10,14 @@ const Hero = () => {
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl animate-pulse delay-1000" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-5xl mx-auto text-center animate-fade-in">
+        <div className="max-w-5xl mx-auto text-center animate-fade-in relative">
+          <div className="absolute -left-32 top-20 hidden xl:block animate-bounce">
+            <img 
+              src="https://cdn.poehali.dev/files/photo_2025-08-14_19-38-37.jpg" 
+              alt="Маскот NTS" 
+              className="w-64 h-auto drop-shadow-2xl"
+            />
+          </div>
           <div className="inline-block mb-6 px-6 py-2 bg-accent/10 border-2 border-accent rounded-full">
             <span className="text-accent font-bold text-lg">🎁 Праздничное предложение!</span>
           </div>

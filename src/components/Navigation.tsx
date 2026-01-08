@@ -35,9 +35,11 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-              <Icon name="Smartphone" className="text-white" size={24} />
-            </div>
+            <img 
+              src="https://cdn.poehali.dev/files/photo_2025-08-14_19-38-37.jpg" 
+              alt="NTS Маскот" 
+              className="w-12 h-12 object-contain"
+            />
             <span className="font-heading font-bold text-xl">
               НАДЕЖНЫЕ СМАРТФОНЫ
             </span>
